@@ -12,7 +12,7 @@
 
 在保证实例成功启动后
 
-![image-20230622162055045](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306221620835.png)
+![image-20230622162055045](/images/development/process-element/202306221620835.png)
 
 如果不出意外 oas 会将 模拟器截屏投屏到 界面上
 
@@ -24,7 +24,7 @@
 
 点击最上方的`Screen Setting`  即可出现投屏的设置
 
-![image-20230622162429129](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306221624255.png)
+![image-20230622162429129](/images/development/process-element/202306221624255.png)
 
 - Image Source:  截屏源，可选来自模拟器还是来自本地图片
 
@@ -43,7 +43,7 @@
 
   :::
 
-  ![image-20230622162835061](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306221628826.png)
+  ![image-20230622162835061](/images/development/process-element/202306221628826.png)
 
 ## Rule
 
@@ -68,7 +68,7 @@
 
 2. 在 oas 的 `RULE Tool`打开建立的文件
 
-   ![image-20230622164627071](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306221646425.png)
+   ![image-20230622164627071](/images/development/process-element/202306221646425.png)
 
 3. 一般打开一个新的右侧列表为空，我们点击`New`新建一项，修改名字回车，此时发现右下方`Item name`和`Image name`也是同步修改（这意味着我们无需手动管理其命名）
 
@@ -126,7 +126,7 @@
 
 `Mode`这个参数表示滑动的模式，是模拟人手滑动（赛贝尔曲线）还是直线
 
-![image-20230622171154314](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306221711057.png)
+![image-20230622171154314](/images/development/process-element/202306221711057.png)
 
 ### Ocr
 
@@ -136,7 +136,7 @@
 
 :::
 
-![image-20230622171810801](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306221718525.png)
+![image-20230622171810801](/images/development/process-element/202306221718525.png)
 
 在介绍使用之前我们先针对 OCR 的使用场景进行分析：
 
@@ -162,7 +162,7 @@
 
 :::
 
-![image-20230705235135895](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202307052351666.png)
+![image-20230705235135895](/images/development/process-element/202307052351666.png)
 
 RuleList的应用场景是为了支持游戏界面中无法一次性展示所有元素的界面操作，但是这并不可以满足所有的滑动列表。
 

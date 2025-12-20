@@ -280,24 +280,34 @@ QML的版本的翻译文件在`./module/config/i18n/{lang}.ts`, 这个文件的�
 
 :::
 
-在接入OASX后翻译工作在UI端进行配置，这时候就是要对 [OASX](https://github.com/runhey/OASX) 进行提交一个 Pr
+在接入OASX后翻译工作在UI端进行配置，这时候就是要对 [OASX](https://github.com/runhey/OASX) 进行提交一个 PR
 
 你需要fork一个分支，用VSCode打开（可以有一个dart语言的插件），
-然后修改`./lib/comom/` 下的翻译文件，可以直接是 `I18n.dart`， 定义一个Map，然后加入到总的Map里面去。
+然后修改`./lib/config/translation` 下的翻译文件，定义一个Map，然后加入到总的Map里面去。但是 OASX 是编译型的，并不会实时生效，所以你需要提交一个 PR，然后等待合并发布就可以了。
 
 ```dart
+  // 文件 ./lib/config/translation/i18n_cn.dart
   Map<String, String> get _cn_pets_config => {
         'pets_config': '小猫咪',
         'pets_happy': '其乐融融',
         'pets_feast': '饕餮大餐',
       };
+  // 文件 ./lib/config/translation/i18n.dart
+  late final Map<String, String> all_cn_translate = {
+    ..._cn_pets_config,
+  };
 ```
 
-```dart
-    zh_CN.addAll(_cn_pets_config);
+还可以在OAS端添加翻译，这里的本质是OASX在启动的时候会从OAS拉一次翻译的文件到内部的一个缓存目录上，下一次启动的时候加载这个文件。所以说你需要启动两次OASX才能看到翻译的变化
+
+```c
+// 在OAS的 ./assets/i18n/zh-CN.json 文件
+{
+  "boss_limit_time": "单局Boss限制时间",
+}
 ```
 
-但是 OASX 是编译型的，并不会实时生效，所以你需要提交一个 pr，然后等待合并发布就可以了。
+
 
 :::tip
 

@@ -42,7 +42,7 @@ https://www.aliyundrive.com/s/qv1w6diDsJQ
 
 :::
 
-![image-20230711133427660](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202307111334717.png)
+![image-20230711133427660](/images/user-manual/emulator-support/202307111334717.png)
 
 拖拽这个放大镜到模拟器的菜单栏上面，保证覆盖整个模拟器
 
@@ -54,7 +54,7 @@ https://www.aliyundrive.com/s/qv1w6diDsJQ
 
 :::
 
-![image-20230711133825785](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202307111338473.png)
+![image-20230711133825785](/images/user-manual/emulator-support/202307111338473.png)
 
 要求所拖拽识别的窗口 父窗口标题必须是 `Desktop`，这时的句柄号和句柄标题才是我们所需要的，随后你可以将上方的`窗口句柄` 或者 `窗口标题` 填入 oas 的 句柄Handle 中
 

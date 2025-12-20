@@ -8,7 +8,8 @@
 :::
 
 ### 理解拆分架构
-<img src="https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202311182129682.png" alt="架构图"  />
+
+![架构图](/images/user-manual/installation/202311182129682.png)
 
 在早先的设计中是不拆分前后端的，由于设计上的需要我们将其拆离出来，这样有如下的优势，但不再详细阐述：
 
@@ -29,8 +30,11 @@
 
 ## 一、下载安装包
 
-### 1.下载 OASX
-在 [Github Releases](https://github.com/runhey/OASX/releases) 下载最新的安装包，首次使用推荐是 windows。
+### 1.下载 OASX(下面两种下载途径)
+- 在 [微软商店 Microsoft Store](https://apps.microsoft.com/detail/9NB1GM4RLB7V) 下载，推荐这种方式，微软商店打不开可以试试关掉代理。
+- 在 [Github Releases](https://github.com/runhey/OASX/releases) 下载最新的安装包，包括所有发布版本(比如安卓)，首次使用推荐是 Windows 的安装包。
+- 也可以在线访问网页版本 [OASX-web](https://runhey.github.io/OASX) 也是需要开代理。
+
 
 ### 2.下载 OAS
 在 [Github Releases](https://github.com/runhey/OnmyojiAutoScript/releases) 下载最新的自动安装包，但不要下载源码的 zip 压缩包。
@@ -78,7 +82,7 @@ OAS web service startup done
 ```
 记住这个 `[Port]` 后面的数字，登录时候用到。这里将会告诉你三种启动 OAS 的方法，当然本质都是一样的。
 
-##### （1）从 OASX 启动
+##### （1）从 OASX 启动(只有安装Windows平台的OASX才可以)
 点击登录页右下角服务按钮，将进入 OAS 服务页面，这个时候你需要配置你的 OAS 文件夹路径,如何识别为正确的文件夹路径将会给你显示右下角的启动按钮，当然在此之前你应当确保你已经正确配置了 `deploy.yaml` 文件，这个非常重要。如果没有问题你可以再次点击右下角的启动按钮。
 这会输出启动日志。
 ![](/picture/3a8c1d5affa551f8f029acb00e1eebc3.png)
@@ -143,13 +147,13 @@ oas 在早期设计中使用 OCR 来识别庭院下的文字以规避不同的�
 
 庭院 => 头像设置 => 画面
 
-![image-20230622231628610](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306222316047.png)
+![image-20230622231628610](/images/user-manual/installation/202306222316047.png)
 
-![image-20230622231716712](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202306222317916.png)
+![image-20230622231716712](/images/user-manual/installation/202306222317916.png)
 
 庭院 => 头像设置 => 交互 => 战斗设置 => 关闭个性结算
 
-![image-20230714233151907](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202307142331743.png)
+![image-20230714233151907](/images/user-manual/installation/202307142331743.png)
 
 庭院 => 图鉴 => 装饰： 左边
 
@@ -195,7 +199,7 @@ pip install pyside6==6.4.3
 
 同上方一致, 本质是启动 `gui.py`
 
-![image-20231207231056648](https://runhey-img-stg1.oss-cn-chengdu.aliyuncs.com/img2/202312072310056.png)
+![image-20231207231056648](/images/user-manual/installation/202312072310056.png)
 
 
 
